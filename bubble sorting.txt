@@ -1,0 +1,16 @@
+arr = [1, 4, 0, 3, 7, 2]
+def bubblesort(arr):
+    for k in range(6):
+        swaps = True
+        for n in range(len(arr)-1):
+            if arr[n] > arr[n + 1]:
+                Temp = arr[n]
+                arr[n] = arr[n + 1]
+                arr[n + 1] = Temp
+                swaps = False
+        if swaps == True:
+            break
+
+print("Unsorted array is:", arr)
+bubblesort(arr)
+print("Sorted array is:", arr)
